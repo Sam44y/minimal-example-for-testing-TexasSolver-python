@@ -97,13 +97,13 @@ dump_result output_result.json
 
 # Get the path for console_solver.exe:
 base_path = Path(__file__).parent
-command = str(base_path / 'TexasSolver-v0.2.0-Windows/console_solver.exe')
+command = str(base_path / 'TexasSolver-v0.2.0-Windows/TexasSolver-v0.2.0-Windows/console_solver.exe')
 
 # Run the command asynchronously
 p = Popen(command, shell=True, stdout=PIPE, stdin=PIPE)
 
 # Write some input to the process
-p.stdin.write(input_data.encode())
+p.stdin.write(input_str.encode())
 
 # Close the stdin stream to signal the end of the input
 p.stdin.close()
