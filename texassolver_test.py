@@ -2,7 +2,7 @@ from subprocess import Popen, PIPE
 # Must be python 3.4 or higher:
 from pathlib import Path
 
-# Code taken from colab:
+################################################# Code taken from colab ####################################################
 
 def make_round_str(round,player,bet,raise_str,donk,allin):
   retstr = ""
@@ -93,7 +93,7 @@ start_solve
 dump_result output_result.json
 """
 
-# Code added for testing:
+############################################### Code added for testing ####################################################
 
 # Get the path for console_solver.exe:
 base_path = Path(__file__).parent
